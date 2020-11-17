@@ -24,6 +24,11 @@ class Student:
             __str__(self): || __repr__(self): 打印对象s1 的时候默认调用这个,返回一个地址,__str__优先级高
             __call__(self,*args,**kwargs): 当对象被当做函数调用是触发  s1()
             __eq__(self,other):   self 等号左边, other 等号右边
+            __ne__  不等于时调用
+            __gt__  大于时调用
+            __setattr__  将对象当字典设置值自动调用
+            str('str'),int('1')等类型转换方法,也会分别调用__str__ __int__
+            。。。
             
     '''
 
@@ -51,6 +56,13 @@ print(s1 is s2)
 
 # 默认 是s1.paops  如果属性不存在会自动添加，称动态属性
 s1.props = "props"
+
+#查看所有方法和属性包括自己定义的和内置的
+print(dir(s1))
+print(s1.__class__) #类名
+print(s1.__dir__)
+print(s1.__doc__)
+print(s1.__module__)
 
 '''
 Student('小丽','2.78',18) 过程如图一   
