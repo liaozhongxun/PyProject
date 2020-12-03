@@ -1,0 +1,2 @@
+['F:\\project\\PyProject\\imports', 'F:\\project\\PyProject', 'F:\\install\\Python\\python37.zip', 'F:\\install\\Python\\DLLs', 'F:\\install\\Python\\lib', 'F:\\install\\Python', 'F:\\install\\Python\\lib\\site-packages']
+正确输出
